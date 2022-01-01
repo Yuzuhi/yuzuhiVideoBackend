@@ -1,0 +1,1645 @@
+2021-12-31 12:07:03.408 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/info?title=tensei
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 12:07:07.258 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/info?title=%E5%93%88%E5%B0%94%E7%9A%84%E7%A7%BB%E5%8A%A8%E5%9F%8E%E5%A0%A1
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 12:12:15.710 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/info?title=%E3%82%AF%E3%83%A9%E3%83%8A%E3%83%89
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 13:18:41.901 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/info?title=elf
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 13:59:40.256 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/info?title=%E5%93%88%E5%B0%94%E7%9A%84%E7%A7%BB%E5%8A%A8%E5%9F%8E%E5%A0%A1
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 14:00:52.987 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/info?title=%E5%93%88%E5%B0%94%E7%9A%84%E7%A7%BB%E5%8A%A8%E5%9F%8E%E5%A0%A1
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:08:54.068 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/videos/NaN/info
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> page
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:11:03.452 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:11:52.566 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:12:22.898 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:12:35.158 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:12:39.988 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:12:51.314 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:13:03.385 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:14:32.710 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:14:51.387 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:15:28.317 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:15:30.378 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:15:54.633 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:16:00.909 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:16:54.616 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:16:57.265 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:17:18.823 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:17:26.969 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:17:28.947 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:17:40.192 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:18:03.186 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:18:12.895 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:18:14.488 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:36:55.215 | ERROR    | app.core.server:inner_validation_exception_handler:140 - 内部参数验证错误
+URL:POSThttp://127.0.0.1:8022/api/v1/local/synchronize/all
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'content-length': '0', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8022', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8022/api/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\FullStackProject\yuzuhiVideo\backend\app\api\v1\video.py", line 58, in synchronize
+    ls.synchronize()
+  File "D:\FullStackProject\yuzuhiVideo\backend\app\core\synchronize\local.py", line 152, in synchronize
+    obj_in = videos.VideosUpdate(
+  File "pydantic\main.py", line 406, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for VideosUpdate
+firstEp
+  field required (type=value_error.missing)
+
+2021-12-31 15:43:05.691 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:43:28.234 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:43:30.917 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:52:01.770 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:54:30.597 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:54:36.354 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/undefined/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:54:41.495 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:55:11.489 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:55:25.011 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:55:36.547 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:55:43.262 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:56:33.018 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:56:34.294 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:56:35.636 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:57:09.511 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:57:14.175 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:59:28.861 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:59:31.822 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 15:59:34.364 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:01:00.567 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:03:38.143 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:03:41.976 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:03:45.160 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:03:53.650 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:04:05.295 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:04:12.063 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:04:50.588 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:05:37.304 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:05:56.449 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:06:00.861 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:06:05.027 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:06:07.748 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:06:09.797 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:06:11.054 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:06:13.433 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:06:14.795 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:06:25.666 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:06:29.326 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:06:33.253 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:06:34.692 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:06:37.263 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:06:51.011 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:07:03.367 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:07:06.574 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:07:26.636 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:07:31.204 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 16:15:40.180 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/video/NaN/byClassify
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> vid
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 20:53:44.238 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/videos/NaN/info?page_size=9
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> page
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 20:53:46.856 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/videos/NaN/info?page_size=9
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> page
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 20:53:47.806 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/videos/NaN/info?page_size=9
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> page
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 20:53:48.639 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/videos/NaN/info?page_size=9
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> page
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 20:53:49.359 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/videos/NaN/info?page_size=9
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> page
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 20:53:50.138 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/videos/NaN/info?page_size=9
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> page
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 20:53:57.487 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/videos/NaN/info?page_size=9
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> page
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 20:53:58.804 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/videos/NaN/info?page_size=9
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> page
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 20:54:00.054 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/videos/NaN/info?page_size=9
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> page
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 20:54:00.774 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/videos/NaN/info?page_size=9
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> page
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 20:54:01.489 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/videos/NaN/info?page_size=9
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> page
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 20:54:18.168 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/videos/NaN/info?page_size=9
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> page
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 20:54:52.213 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/videos/NaN/info?page_size=9
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> page
+  value is not a valid integer (type=type_error.integer)
+
+2021-12-31 20:54:59.223 | ERROR    | app.core.server:request_validation_exception_handler:152 - 请求参数格式错误
+URL:GEThttp://127.0.0.1:8022/api/v1/videos/NaN/info?page_size=9
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json, text/plain, */*', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 224, in app
+    raise RequestValidationError(errors, body=body)
+fastapi.exceptions.RequestValidationError: 1 validation error for Request
+path -> page
+  value is not a valid integer (type=type_error.integer)
+

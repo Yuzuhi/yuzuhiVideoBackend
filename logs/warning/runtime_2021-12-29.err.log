@@ -1,0 +1,56 @@
+2021-12-29 17:54:56.671 | ERROR    | app.core.server:inner_validation_exception_handler:140 - 内部参数验证错误
+URL:POSThttp://127.0.0.1:8022/api/v1/local/synchronize/all
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'content-length': '0', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8022', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8022/api/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\FullStackProject\yuzuhiVideo\backend\app\api\v1\video.py", line 28, in synchronize
+    ls.synchronize()
+  File "D:\FullStackProject\yuzuhiVideo\backend\app\core\synchronize\local.py", line 116, in synchronize
+    self._update_db_info(video, video_id, check_expire=False)
+  File "D:\FullStackProject\yuzuhiVideo\backend\app\core\synchronize\local.py", line 61, in _update_db_info
+    self._upload2db(videos.VideosCreate,
+  File "D:\FullStackProject\yuzuhiVideo\backend\app\core\synchronize\local.py", line 72, in _upload2db
+    obj_info = model(**kwargs)
+  File "pydantic\main.py", line 406, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for VideosCreate
+position
+  field required (type=value_error.missing)
+
+2021-12-29 18:55:32.463 | ERROR    | app.core.server:inner_validation_exception_handler:140 - 内部参数验证错误
+URL:POSThttp://127.0.0.1:8022/api/v1/local/synchronize/all
+Headers:Headers({'host': '127.0.0.1:8022', 'connection': 'keep-alive', 'content-length': '0', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"', 'accept': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'origin': 'http://127.0.0.1:8022', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8022/api/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9'})
+Traceback (most recent call last):
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\86173\Anaconda3\envs\videoWeb\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "D:\FullStackProject\yuzuhiVideo\backend\app\api\v1\video.py", line 28, in synchronize
+    ls.synchronize()
+  File "D:\FullStackProject\yuzuhiVideo\backend\app\core\synchronize\local.py", line 133, in synchronize
+    self._upload2db(videos.VideosCreate,
+  File "D:\FullStackProject\yuzuhiVideo\backend\app\core\synchronize\local.py", line 73, in _upload2db
+    obj_info = model(**kwargs)
+  File "pydantic\main.py", line 406, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for VideosCreate
+img
+  str type expected (type=type_error.str)
+
