@@ -49,7 +49,7 @@ api/v1/videos/{page}/info get
       "title": "death note",
       "img": "/anime/death_note/preview.png",
       "episodes": 5,
-      "firstEp": 1000
+      "firstEp": ""
     }
   ]
 }
@@ -107,15 +107,15 @@ api/v1/video/{vid}/byClassify get
     [
       {
         "type": "tv",
-        "src": "http://127.0.0.1:9000/46080260$$哈尔的移动城堡/tv/3038794862$$移动城堡.mp4",
+        "src": "http://127.0.0.1:9000/46080260$$哈尔的移动城堡/tv/3038794862$$1.mp4",
         "id": 3038794862,
-        "name": "移动城堡"
+        "name": "1",
       },
       {
         "type": "tv",
-        "src": "http://127.0.0.1:9000/46080260$$哈尔的移动城堡/tv/8706999328$$移动城堡 (2).mp4",
+        "src": "http://127.0.0.1:9000/46080260$$哈尔的移动城堡/tv/8706999328$$2.mp4",
         "id": 8706999328,
-        "name": "移动城堡 (2)"
+        "name": "2"
       }
     ],
     [

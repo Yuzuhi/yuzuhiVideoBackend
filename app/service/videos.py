@@ -1,5 +1,6 @@
-from typing import Any, Union, Dict, Sequence, Optional
+from typing import Any, Union, Dict, Sequence, Optional, List
 
+from sqlalchemy import update
 from sqlalchemy.orm import Session
 
 from app.models.episodes import Episodes
@@ -11,7 +12,7 @@ from setting import settings
 
 
 class CRUDVideos(
-    CRUDBase[Videos, videos.VideosCreate, videos.VideosUpdate]
+    CRUDBase[Videos, videos.VideoCreate, videos.VideoUpdate]
 ):
 
     def update(self, db: Session, id: int, *, obj_in: Union[UpdateSchemaType, Dict[str, Any]]) -> ModelType:
@@ -30,13 +31,20 @@ class CRUDVideos(
 
     def multi_delete(self, db: Session, *, ids: Sequence[int]) -> ModelType:
         # 首先删除episodes表中的数据
-        for videoID in ids:
-            db.query(Episodes).filter(Episodes.videoID == videoID).filter(
-                Episodes.position == settings.LOCAL_POSITION).delete(synchronize_session=False)
+        # for videoID in ids:
+        db.query(Episodes).filter(Episodes.videoID.in_(ids)).filter(
+            Episodes.position == settings.LOCAL_POSITION).delete(synchronize_session=False)
 
         obj = db.query(self.model).filter(self.model.id.in_(ids)).delete(synchronize_session=False)
         db.commit()
         return obj
+
+    def multi_update(self, db: Session, *, obj_list: List[UpdateSchemaType]) -> List[ModelType]:
+        for db_obj in obj_list:
+            stmt = update(self.model).where(self.model.id == db_obj.id).values(db_obj.dict())
+            db.execute(stmt)
+            db.commit()
+        return obj_list
 
 
 crud_videos = CRUDVideos(Videos)

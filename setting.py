@@ -5,7 +5,7 @@ from pydantic import BaseSettings
 
 
 class Settings(BaseSettings):
-    DEBUG: bool = False
+    DEBUG: bool = True
     HOST: str = "127.0.0.1"
     RELOAD: bool = False
     PORT: int = 8022

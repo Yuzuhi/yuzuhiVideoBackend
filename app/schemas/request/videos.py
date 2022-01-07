@@ -3,23 +3,23 @@ import time
 from pydantic import BaseModel
 
 
-class VideosCreate(BaseModel):
+class VideoCreate(BaseModel):
     id: int
     title: str
     img: str = ""
     episodes: int
     position: str
-    firstEp: int
+    firstEp: str
     timestamp: float = time.time()
 
 
-class VideosUpdate(BaseModel):
+class VideoUpdate(BaseModel):
     id: int
     title: str
     img: str
     episodes: int
     position: str
-    firstEp: int
+    firstEp: str
     timestamp: float = time.time()
 
 
@@ -27,5 +27,5 @@ class FrontEndVideoRetrieve(BaseModel):
     id: int
     title: str
     img: str
-    firstEp: int
+    firstEp: str
     episodes: int

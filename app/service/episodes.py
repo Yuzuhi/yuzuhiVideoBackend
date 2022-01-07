@@ -9,7 +9,7 @@ from setting import settings
 
 
 class CRUDEpisodes(
-    CRUDBase[Episodes, episodes.EpisodesCreate, episodes.EpisodesUpdate]
+    CRUDBase[Episodes, episodes.EpisodeCreate, episodes.EpisodeUpdate]
 ):
 
     def get_multi_by_videoID(
@@ -20,11 +20,11 @@ class CRUDEpisodes(
         if not retrieve_model:
             return db.query(self.model).filter(
                 self.model.videoID == video_id, self.model.position == settings.LOCAL_POSITION
-            ).order_by(self.model.name).offset(temp_page).limit(page_size).all()
+            ).order_by(self.model.episode).offset(temp_page).limit(page_size).all()
         else:
             return db.query(self.model).options(load_only(*retrieve_model.__fields__.keys())).filter(
                 self.model.videoID == video_id, self.model.position == settings.LOCAL_POSITION
-            ).order_by(self.model.name).offset(temp_page).limit(page_size).all()
+            ).order_by(self.model.episode).offset(temp_page).limit(page_size).all()
 
 
 crud_episodes = CRUDEpisodes(Episodes)

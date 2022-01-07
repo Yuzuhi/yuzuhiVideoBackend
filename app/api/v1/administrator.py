@@ -1,7 +1,4 @@
-
-
 router = APIRouter()
-
 
 
 @router.post('/add/administrator/', name="添加管理员")

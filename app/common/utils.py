@@ -17,5 +17,6 @@ def get_db() -> Generator:
         db.close()
 
 
-def genID(digit: int) -> int:
-    return random.randint(0, 10 ** digit - 1)
+def timeline_rollback(timeline: int):
+    new = timeline - 5
+    return new if new > 0 else 0

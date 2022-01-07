@@ -3,9 +3,9 @@ import time
 from pydantic import BaseModel
 
 
-class EpisodesCreate(BaseModel):
+class EpisodeCreate(BaseModel):
     src: str
-    name: str
+    episode: float
     type: str
     id: int
     position: str
@@ -13,9 +13,9 @@ class EpisodesCreate(BaseModel):
     timestamp: float = time.time()
 
 
-class EpisodesUpdate(BaseModel):
+class EpisodeUpdate(BaseModel):
     src: str
-    name: str
+    episode: float
     type: str
     id: int
     position: str
@@ -25,5 +25,5 @@ class EpisodesUpdate(BaseModel):
 
 class FrontEndEpisodeRetrieve(BaseModel):
     src: str
-    name: str
+    episode: float
     type: str

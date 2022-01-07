@@ -64,9 +64,15 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
         db.commit()
         return obj
 
-    def get_multi_by_position(
+    def get_multi_local(
             self, db: Session, *, page: int = 1, page_size: int = 100
     ) -> List[ModelType]:
         temp_page = (page - 1) * page_size
         return db.query(self.model).filter(self.model.position == settings.LOCAL_POSITION).offset(temp_page).limit(
             page_size).all()
+
+    def multi_create(self, db: Session, *, obj_list: Sequence[CreateSchemaType]) -> List[ModelType]:
+        db_obj = [self.model(**jsonable_encoder(obj_data)) for obj_data in obj_list]
+        db.bulk_save_objects(db_obj)
+        db.commit()
+        return db_obj
