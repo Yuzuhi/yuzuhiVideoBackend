@@ -17,6 +17,6 @@ def get_db() -> Generator:
         db.close()
 
 
-def timeline_rollback(timeline: int):
+def timeline_rollback(timeline: float) -> float:
     new = timeline - 5
     return new if new > 0 else 0

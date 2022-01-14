@@ -7,3 +7,4 @@ class UserCreate(BaseModel):
 
 class UserUpdate(BaseModel):
     ip: str
+

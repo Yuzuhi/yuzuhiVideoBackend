@@ -9,7 +9,7 @@ from sqlalchemy.orm import Session
 
 from app.common.custom_exc import LocalEpisodeNameError, LocalVideoTitleError
 from app.schemas.request import episodes, videos
-from app.service.crud_base import CRUDBase
+from app.service.crud_base import CRUDBase, ModelType
 from app.service.episodes import crud_episodes
 from app.service.videos import crud_videos
 from setting import settings
@@ -61,8 +61,6 @@ class LocalSynchronizer:
             crud_videos.multi_update(self.db, obj_list=self.videos_update_list)
         if self.episodes_create_list:
             crud_episodes.multi_create(self.db, obj_list=self.episodes_create_list)
-        # except Exception:
-        #     return
 
     def handle_video_dir(self, video: Path):
         """
@@ -90,11 +88,11 @@ class LocalSynchronizer:
             while count < 100:
                 count += 1
                 video_id = self.genID(settings.VIDEO_ID_DIGIT)
-                res = crud_videos.get(self.db, video_id)
-                if not res:
+                obj_data = crud_videos.get(self.db, video_id)
+                if not obj_data:
                     # 将文件夹改名
-                    title = str(video_id) + settings.VIDEO_NAME_SEPARATOR + video.name
-                    os.rename(video, video.parent.joinpath(title))
+                    title = video.parent.joinpath(str(video_id) + settings.VIDEO_NAME_SEPARATOR + video.name)
+                    os.rename(video, title)
                     video = Path(title)
                     break
             else:
@@ -113,11 +111,11 @@ class LocalSynchronizer:
         video_episode = 0
         img = ""
         # 该文件夹下的第一集动画
-        first_ep = ""
+        first_ep = -1
         for file in video_path.rglob("*"):
             # 封面图
             value = self.handle_file(file, video_path, video_id)
-            # 如果value为str,则返回的是img路径，如果value为int，则返回的是episode_id，如果episode_id==-1，则认为此文件为无效文件，跳过。
+            # 如果value为1,则返回的是img路径，如果value为2，则返回的是episode_src，如果episode_id==0，则认为此文件为无效文件，跳过。
             if value[0] == 0:
                 continue
             elif value[0] == 1:
@@ -125,7 +123,7 @@ class LocalSynchronizer:
             elif value[0] == 2:
                 # 证明当前文件是一个episode
                 video_episode += 1
-                if not first_ep:
+                if first_ep == -1:
                     first_ep = value[1]
 
         self._append_video_info(video_id, video_path, img, first_ep, video_episode, operate)
@@ -138,7 +136,7 @@ class LocalSynchronizer:
             # 清空
             self.local_episodes = set()
 
-    def handle_file(self, file: Path, video_path: Path, video_id: int) -> Tuple[int, str]:
+    def handle_file(self, file: Path, video_path: Path, video_id: int) -> Tuple:
         """
         处理二级文件与文件夹
         :param file: 二级文件与文件夹的目录
@@ -158,11 +156,11 @@ class LocalSynchronizer:
                     self.local_episodes.add(episode_id)
                     return 0, ""
                 else:
-                    episode_src = self._handle_old_file(episode_id, file, video_id, video_path.name)
-                    return 2, episode_src
+                    episode_id = self._handle_old_file(episode_id, file, video_id, video_path.name)
+                    return 2, episode_id
             else:
-                episode_src = self._handle_new_file(file, video_id, video_path.name)
-                return 2, episode_src
+                episode_id = self._handle_new_file(file, video_id, video_path.name)
+                return 2, episode_id
 
         return 0, ""
 
@@ -171,7 +169,7 @@ class LocalSynchronizer:
                          file: Path,
                          video_id: int,
                          video_name: str,
-                         position: str = settings.LOCAL_POSITION) -> str:
+                         position: str = settings.LOCAL_POSITION) -> int:
 
         src = settings.STATIC_SERVER + f"{video_name}/{file.parent.name}/{file.name}"
         episode = self._get_local_episode_name(file)
@@ -187,13 +185,13 @@ class LocalSynchronizer:
 
         self.episodes_create_list.append(obj_in)
 
-        return src
+        return episode_id
 
     def _handle_new_file(self,
                          file: Path,
                          video_id: int,
                          video_name: str,
-                         position: str = settings.LOCAL_POSITION) -> str:
+                         position: str = settings.LOCAL_POSITION) -> int:
         episode_id = self.genID(settings.Episode_ID_DIGIT)
         count = 0
         # 最多尝试100次
@@ -221,9 +219,9 @@ class LocalSynchronizer:
                 self.episodes_create_list.append(obj_in)
                 # 改名
                 os.rename(file, file.parent.joinpath(new_episode_name))
-                return src
+                return episode_id
 
-        return ""
+        return -1
 
     def _delete_expire_info(self, service: CRUDBase, db_info: Set[int], local_info: Set[int]):
         """
@@ -238,7 +236,7 @@ class LocalSynchronizer:
     def _append_video_info(self, video_id: int,
                            video: Path,
                            img: str,
-                           first_ep: str,
+                           first_ep: int,
                            video_episode: int,
                            operate: str):
         """
@@ -314,3 +312,34 @@ class LocalSynchronizer:
     @staticmethod
     def genID(digit: int) -> int:
         return random.randint(0, 10 ** digit - 1)
+
+
+class LocalAdder(LocalSynchronizer):
+    # 增加指定video名的数据
+    ADD_MODE = "add"
+
+    def __init__(self, db: Session):
+        super().__init__(db, mode="mode")
+
+    def add(self, title: str) -> Optional[ModelType]:
+        """
+        添加指定文件夹至数据库
+        :param title:
+        :return:
+        """
+
+        # 遍历所有video文件夹
+        for video in settings.STATIC_PATH.iterdir():
+            if video.name != title:
+                continue
+            self.handle_video_dir(video)
+            break
+
+        if not self.videos_create_list:
+            # 未找到目标文件夹，返回None
+            return
+
+        if self.episodes_create_list:
+            crud_episodes.multi_create(self.db, obj_list=self.episodes_create_list)
+
+        return crud_videos.create(self.db, obj_in=self.videos_create_list[0])

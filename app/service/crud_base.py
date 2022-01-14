@@ -47,8 +47,9 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
             update_data = obj_in
         else:
             update_data = obj_in.dict(exclude_unset=True)
-        db.query(self.model).filter(self.model.id == id).update(update_data, synchronize_session=False)
-        db_obj = self.model(**obj_in)
+        db_obj = db.query(self.model).filter(self.model.id == id).first()
+        for field in update_data:
+            setattr(db_obj, field, update_data[field])
         db.commit()
         db.refresh(db_obj)
         return db_obj

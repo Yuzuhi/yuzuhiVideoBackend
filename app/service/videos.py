@@ -1,7 +1,7 @@
 from typing import Any, Union, Dict, Sequence, Optional, List
 
-from sqlalchemy import update
-from sqlalchemy.orm import Session
+from sqlalchemy import update, literal
+from sqlalchemy.orm import Session, load_only
 
 from app.models.episodes import Episodes
 from app.models.videos import Videos

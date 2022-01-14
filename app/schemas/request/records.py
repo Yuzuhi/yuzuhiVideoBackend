@@ -6,10 +6,10 @@ class RecordCreate(BaseModel):
     videoID: int
     episodeID: int
     src: str
-    timeline: int
+    timeline: float
 
 
 class RecordUpdate(BaseModel):
     episodeID: int
     src: str
-    timeline: int
+    timeline: float

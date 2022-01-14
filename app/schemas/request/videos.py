@@ -9,7 +9,7 @@ class VideoCreate(BaseModel):
     img: str = ""
     episodes: int
     position: str
-    firstEp: str
+    firstEp: int
     timestamp: float = time.time()
 
 
@@ -19,7 +19,7 @@ class VideoUpdate(BaseModel):
     img: str
     episodes: int
     position: str
-    firstEp: str
+    firstEp: int
     timestamp: float = time.time()
 
 
@@ -27,5 +27,6 @@ class FrontEndVideoRetrieve(BaseModel):
     id: int
     title: str
     img: str
-    firstEp: str
+    firstEp: int
     episodes: int
+
