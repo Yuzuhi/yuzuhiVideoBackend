@@ -23,10 +23,13 @@ class VideoUpdate(BaseModel):
     timestamp: float = time.time()
 
 
-class FrontEndVideoRetrieve(BaseModel):
+class VideosInfoRetrieve(BaseModel):
     id: int
     title: str
     img: str
     firstEp: int
     episodes: int
 
+
+class VidRetrieve(BaseModel):
+    id: int

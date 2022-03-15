@@ -154,7 +154,7 @@ class LocalSynchronizer:
                     return 0, ""
                 if self.mode == self.AUTO_MODE or self.mode == self.CLEAR_MODE:
                     self.local_episodes.add(episode_id)
-                    return 0, ""
+                    return 2, episode_id
                 else:
                     episode_id = self._handle_old_file(episode_id, file, video_id, video_path.name)
                     return 2, episode_id
@@ -197,7 +197,7 @@ class LocalSynchronizer:
         # 最多尝试100次
         while count < 100:
             if crud_episodes.get(self.db, episode_id):
-                episode_id = episode_id
+                episode_id = self.genID(settings.Episode_ID_DIGIT)
                 count += 1
             else:
                 new_episode_name = str(episode_id) + settings.VIDEO_NAME_SEPARATOR + file.name

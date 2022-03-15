@@ -24,6 +24,35 @@
 
 ****
 
+### get all vid
+
+```
+[GET] api/v1/videos/all
+```
+
+使用此方法获取所有video的id
+
+#### Response
+
+```json
+{
+  "code": 200,
+  "message": "success",
+  "data": [
+    3339216,
+    10371570,
+    17106239,
+    27986538,
+    70501586,
+    75900611,
+    82551645,
+    83905527,
+    89995171,
+    91621829
+  ]
+}
+```
+
 ### get videos
 
 #### 接口名称
@@ -47,16 +76,26 @@
 ```json
 {
   "code": 200,
-  "msg": "success",
-  "data": [
-    {
-      "id": 100,
-      "title": "death note",
-      "img": "/anime/death_note/preview.png",
-      "episodes": 5,
-      "firstEp": ""
-    }
-  ]
+  "message": "success",
+  "data": {
+    "videos": [
+      {
+        "title": "哈尔的移动城堡",
+        "firstEp": 5608682752,
+        "episodes": 2,
+        "id": 4159201,
+        "img": "http://127.0.0.1:9000/4159201$$哈尔的移动城堡/哈尔的移动城堡.png"
+      },
+      {
+        "title": "lagoon",
+        "firstEp": -1,
+        "episodes": 0,
+        "id": 9052164,
+        "img": "http://127.0.0.1:9000/9052164$$lagoon/lagoon.png"
+      }
+    ],
+    "totalPage": 1
+  }
 }
 ```
 

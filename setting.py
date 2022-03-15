@@ -42,8 +42,7 @@ class Settings(BaseSettings):
     LOCAL_POSITION = "local"
     # static server
     STATIC_SERVER_HOST: str = "127.0.0.1"
-    STATIC_SERVER_PORT: int = 9000
-    STATIC_SERVER = f"http://{STATIC_SERVER_HOST}:{STATIC_SERVER_PORT}/"
+    STATIC_SERVER = f"http://{STATIC_SERVER_HOST}:9000/"
     STATIC_PATH: Path = Path(r"D:\staticServer\Nginx\static")
     # DB
     SQLALCHEMY_DATABASE_URL = "sqlite:///yuzuhiVideo.sqlite"
@@ -52,6 +51,5 @@ class Settings(BaseSettings):
 settings = Settings()
 if not settings.DEBUG:
     settings.STATIC_SERVER_HOST = "20.48.90.49"
-    settings.STATIC_PATH = Path(r"C:\Users\yuzuhi\Desktop\staticServer\Nginx\static")
-    settings.STATIC_SERVER_PORT = 80
-    settings.STATIC_SERVER = f"http://{settings.STATIC_SERVER_HOST}:{settings.STATIC_SERVER_PORT}/video/"
+    settings.STATIC_PATH = Path(r"C:\Users\yuzuhi\Desktop\static")
+    settings.STATIC_SERVER = f"http://{settings.STATIC_SERVER_HOST}/"

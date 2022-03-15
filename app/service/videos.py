@@ -46,5 +46,9 @@ class CRUDVideos(
             db.commit()
         return obj_list
 
+    def total_page(self, db: Session, *, pagesize: int) -> int:
+        count = db.query(self.model).count()
+        return count // pagesize if count % pagesize == 0 else (count // pagesize) + 1
+
 
 crud_videos = CRUDVideos(Videos)
